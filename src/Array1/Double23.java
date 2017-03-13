@@ -1,0 +1,31 @@
+package Array1;
+
+/**
+ * Created by Wags on 3/12/17.
+ */
+public class Double23 {
+    public static void main(String[] args) {
+        int[] nums = {2, 3};
+        System.out.print(double23(nums));
+    }
+
+    /**
+     * Given an int array, return true if the array contains
+     * 2 twice, or 3 twice. The array will be length 0, 1, or 2.
+     * double23([2, 2]) → true
+     * double23([3, 3]) → true
+     * double23([2, 3]) → false
+     *
+     * @param nums
+     * @return
+     */
+    public static boolean double23(int[] nums) {
+        if (nums.length < 2) {
+            return false;
+        } else if ((nums[0] == 2 && nums[1] == 2) || nums[0] == 3 && nums[1] == 3) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
