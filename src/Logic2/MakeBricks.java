@@ -8,6 +8,7 @@ public class MakeBricks {
     public static void main(String[] args) {
 
         System.out.print(makeBricks(3, 1, 8));
+        System.out.print(makeBricks2(3, 1, 8));
 
     }
 
