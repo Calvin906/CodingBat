@@ -27,7 +27,6 @@ public class ZipZap {
                 str = str.substring(0, i + 1) + str.substring(i + 2);
             }
         }
-
         return str;
     }
 }
