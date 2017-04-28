@@ -5,7 +5,7 @@ package Array2;
  */
 public class ModThree {
     public static void main(String[] args) {
-        int[] arr1 = {1, 2, 3};
+        int[] arr1 = {1, 2, 3, 5, 5};
         System.out.println("Expected: true, Received: " + modThree(arr1));
     }
 
@@ -20,11 +20,11 @@ public class ModThree {
      * @return
      */
     public static boolean modThree(int[] nums) {
-        for (int i = 0 ;i < nums.length-2;i ++){
-            if (nums[i] % 2 == 0 && nums[i+1] % 2 == 0 && nums[i+2] % 2 == 0){
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (nums[i] % 2 == 0 && nums[i + 1] % 2 == 0 && nums[i + 2] % 2 == 0) {
                 return true;
             }
-            if (nums[i] % 2 != 0 && nums[i+1] % 2 != 0 && nums[i+2] % 2 != 0){
+            if (nums[i] % 2 != 0 && nums[i + 1] % 2 != 0 && nums[i + 2] % 2 != 0) {
                 return true;
             }
         }
