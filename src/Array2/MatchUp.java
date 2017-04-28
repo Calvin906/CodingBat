@@ -7,7 +7,7 @@ public class MatchUp {
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 3};
         int[] arr2 = {2, 3, 10};
-        System.out.print(matchUp(arr1, arr2));
+        System.out.println("Expected: true, Received: " + matchUp(arr1, arr2));
     }
 
     /**
